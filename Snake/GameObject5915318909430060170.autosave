@@ -1,9 +1,9 @@
 abstract class GameObject {
   PVector posicion;
-
-  GameObject(float x, float y) {
-    posicion = new PVector(x, y);
+  
+  GameObject(float x, float y){
+    posicion = new PVector(x,y);
   }
-
+  
   abstract void mover();
 }

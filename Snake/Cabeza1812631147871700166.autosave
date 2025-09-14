@@ -1,4 +1,4 @@
-class Cabeza extends GameObject{
+class Cabeza extends GameObject {
   PVector direccion;
   int velocidad;
   int alto;
@@ -6,10 +6,8 @@ class Cabeza extends GameObject{
   
   Cabeza(float x, float y){
     super(x,y);
-    alto = 40;
+    alto= 40;
     ancho= 35;
-    direccion = new PVector(0,1);
-    velocidad = 5;
   }
   
   void mostrar(){
@@ -18,8 +16,6 @@ class Cabeza extends GameObject{
   }
   
   void mover(){
-   posicion.x += direccion.x * velocidad;
-   posicion.y += direccion.y * velocidad;
-
   }
 }
+  

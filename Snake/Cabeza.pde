@@ -20,6 +20,12 @@ class Cabeza extends GameObject{
   void mover(){
    posicion.x += direccion.x * velocidad;
    posicion.y += direccion.y * velocidad;
+   
+  if (posicion.y < alto/2 || posicion.y + alto/2 > height) {
+    direccion.y *= -1;
+    posicion.y = constrain(posicion.y, 0, height - alto);
+  }
+  
 
   }
   

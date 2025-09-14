@@ -11,5 +11,19 @@ void draw() {
   cabeza.mover();
 }
 
-void keyPressed(){
+void keyPressed() {
+  switch (keyCode) {
+    case UP:
+      cabeza.setDireccion(0, -1);
+      break;
+    case DOWN:
+      cabeza.setDireccion(0, 1);
+      break;
+    case LEFT:
+      cabeza.setDireccion(-1, 0);
+      break;
+    case RIGHT:
+      cabeza.setDireccion(1, 0);
+      break;
+  }
 }

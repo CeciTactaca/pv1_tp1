@@ -22,4 +22,8 @@ class Cabeza extends GameObject{
    posicion.y += direccion.y * velocidad;
 
   }
+  
+  void setDireccion(float dx, float dy){
+    direccion.set(dx,dy);
+  }
 }
